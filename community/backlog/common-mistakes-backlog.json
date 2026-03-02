@@ -284,7 +284,7 @@
     "correct": "日本語がわかります。",
     "explanation": "わかる takes が. (Pattern set 2)",
     "id": 36,
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
