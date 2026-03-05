@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-05T09:31:32.622Z",
+  "generatedAt": "2026-03-05T14:57:17.061Z",
   "source": {
     "monkeytypeSoundRoot": "C:\\Users\\reser\\monkeytype\\frontend\\static\\sound",
     "notes": "Names follow Monkeytype click sound labels plus KanaDojo synthetic expansion pack."
@@ -275,307 +275,98 @@
       ]
     },
     {
-      "id": "x1",
-      "label": "pulse soft",
-      "slug": "pulse-soft",
+      "id": "x17",
+      "label": "chaos burst",
+      "slug": "chaos-burst",
       "sourceType": "synthetic-generated",
       "monkeytypeSourceFolder": null,
       "variants": [
-        "pulse-soft_01",
-        "pulse-soft_02",
-        "pulse-soft_03",
-        "pulse-soft_04",
-        "pulse-soft_05",
-        "pulse-soft_06",
-        "pulse-soft_07",
-        "pulse-soft_08",
-        "pulse-soft_09",
-        "pulse-soft_10"
+        "chaos-burst_01",
+        "chaos-burst_02",
+        "chaos-burst_03",
+        "chaos-burst_04",
+        "chaos-burst_05",
+        "chaos-burst_06",
+        "chaos-burst_07",
+        "chaos-burst_08",
+        "chaos-burst_09",
+        "chaos-burst_10"
       ]
     },
     {
-      "id": "x2",
-      "label": "fm glass",
-      "slug": "fm-glass",
+      "id": "x18",
+      "label": "reverse suck",
+      "slug": "reverse-suck",
       "sourceType": "synthetic-generated",
       "monkeytypeSourceFolder": null,
       "variants": [
-        "fm-glass_01",
-        "fm-glass_02",
-        "fm-glass_03",
-        "fm-glass_04",
-        "fm-glass_05",
-        "fm-glass_06",
-        "fm-glass_07",
-        "fm-glass_08",
-        "fm-glass_09",
-        "fm-glass_10"
+        "reverse-suck_01",
+        "reverse-suck_02",
+        "reverse-suck_03",
+        "reverse-suck_04",
+        "reverse-suck_05",
+        "reverse-suck_06",
+        "reverse-suck_07",
+        "reverse-suck_08",
+        "reverse-suck_09",
+        "reverse-suck_10"
       ]
     },
     {
-      "id": "x3",
-      "label": "analog thock",
-      "slug": "analog-thock",
+      "id": "x19",
+      "label": "ringmod zap",
+      "slug": "ringmod-zap",
       "sourceType": "synthetic-generated",
       "monkeytypeSourceFolder": null,
       "variants": [
-        "analog-thock_01",
-        "analog-thock_02",
-        "analog-thock_03",
-        "analog-thock_04",
-        "analog-thock_05",
-        "analog-thock_06",
-        "analog-thock_07",
-        "analog-thock_08",
-        "analog-thock_09",
-        "analog-thock_10"
+        "ringmod-zap_01",
+        "ringmod-zap_02",
+        "ringmod-zap_03",
+        "ringmod-zap_04",
+        "ringmod-zap_05",
+        "ringmod-zap_06",
+        "ringmod-zap_07",
+        "ringmod-zap_08",
+        "ringmod-zap_09",
+        "ringmod-zap_10"
       ]
     },
     {
-      "id": "x4",
-      "label": "bit crunch",
-      "slug": "bit-crunch",
+      "id": "x20",
+      "label": "granular shatter",
+      "slug": "granular-shatter",
       "sourceType": "synthetic-generated",
       "monkeytypeSourceFolder": null,
       "variants": [
-        "bit-crunch_01",
-        "bit-crunch_02",
-        "bit-crunch_03",
-        "bit-crunch_04",
-        "bit-crunch_05",
-        "bit-crunch_06",
-        "bit-crunch_07",
-        "bit-crunch_08",
-        "bit-crunch_09",
-        "bit-crunch_10"
+        "granular-shatter_01",
+        "granular-shatter_02",
+        "granular-shatter_03",
+        "granular-shatter_04",
+        "granular-shatter_05",
+        "granular-shatter_06",
+        "granular-shatter_07",
+        "granular-shatter_08",
+        "granular-shatter_09",
+        "granular-shatter_10"
       ]
     },
     {
-      "id": "x5",
-      "label": "woodblock",
-      "slug": "woodblock",
+      "id": "x21",
+      "label": "subdrop thud",
+      "slug": "subdrop-thud",
       "sourceType": "synthetic-generated",
       "monkeytypeSourceFolder": null,
       "variants": [
-        "woodblock_01",
-        "woodblock_02",
-        "woodblock_03",
-        "woodblock_04",
-        "woodblock_05",
-        "woodblock_06",
-        "woodblock_07",
-        "woodblock_08",
-        "woodblock_09",
-        "woodblock_10"
-      ]
-    },
-    {
-      "id": "x6",
-      "label": "marimba mini",
-      "slug": "marimba-mini",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "marimba-mini_01",
-        "marimba-mini_02",
-        "marimba-mini_03",
-        "marimba-mini_04",
-        "marimba-mini_05",
-        "marimba-mini_06",
-        "marimba-mini_07",
-        "marimba-mini_08",
-        "marimba-mini_09",
-        "marimba-mini_10"
-      ]
-    },
-    {
-      "id": "x7",
-      "label": "kalimba tine",
-      "slug": "kalimba-tine",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "kalimba-tine_01",
-        "kalimba-tine_02",
-        "kalimba-tine_03",
-        "kalimba-tine_04",
-        "kalimba-tine_05",
-        "kalimba-tine_06",
-        "kalimba-tine_07",
-        "kalimba-tine_08",
-        "kalimba-tine_09",
-        "kalimba-tine_10"
-      ]
-    },
-    {
-      "id": "x8",
-      "label": "bubble pop",
-      "slug": "bubble-pop",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "bubble-pop_01",
-        "bubble-pop_02",
-        "bubble-pop_03",
-        "bubble-pop_04",
-        "bubble-pop_05",
-        "bubble-pop_06",
-        "bubble-pop_07",
-        "bubble-pop_08",
-        "bubble-pop_09",
-        "bubble-pop_10"
-      ]
-    },
-    {
-      "id": "x9",
-      "label": "laser pew micro",
-      "slug": "laser-pew-micro",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "laser-pew-micro_01",
-        "laser-pew-micro_02",
-        "laser-pew-micro_03",
-        "laser-pew-micro_04",
-        "laser-pew-micro_05",
-        "laser-pew-micro_06",
-        "laser-pew-micro_07",
-        "laser-pew-micro_08",
-        "laser-pew-micro_09",
-        "laser-pew-micro_10"
-      ]
-    },
-    {
-      "id": "x10",
-      "label": "vinyl tick",
-      "slug": "vinyl-tick",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "vinyl-tick_01",
-        "vinyl-tick_02",
-        "vinyl-tick_03",
-        "vinyl-tick_04",
-        "vinyl-tick_05",
-        "vinyl-tick_06",
-        "vinyl-tick_07",
-        "vinyl-tick_08",
-        "vinyl-tick_09",
-        "vinyl-tick_10"
-      ]
-    },
-    {
-      "id": "x11",
-      "label": "hollow clack",
-      "slug": "hollow-clack",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "hollow-clack_01",
-        "hollow-clack_02",
-        "hollow-clack_03",
-        "hollow-clack_04",
-        "hollow-clack_05",
-        "hollow-clack_06",
-        "hollow-clack_07",
-        "hollow-clack_08",
-        "hollow-clack_09",
-        "hollow-clack_10"
-      ]
-    },
-    {
-      "id": "x12",
-      "label": "zen bell short",
-      "slug": "zen-bell-short",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "zen-bell-short_01",
-        "zen-bell-short_02",
-        "zen-bell-short_03",
-        "zen-bell-short_04",
-        "zen-bell-short_05",
-        "zen-bell-short_06",
-        "zen-bell-short_07",
-        "zen-bell-short_08",
-        "zen-bell-short_09",
-        "zen-bell-short_10"
-      ]
-    },
-    {
-      "id": "x13",
-      "label": "typebar metal",
-      "slug": "typebar-metal",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "typebar-metal_01",
-        "typebar-metal_02",
-        "typebar-metal_03",
-        "typebar-metal_04",
-        "typebar-metal_05",
-        "typebar-metal_06",
-        "typebar-metal_07",
-        "typebar-metal_08",
-        "typebar-metal_09",
-        "typebar-metal_10"
-      ]
-    },
-    {
-      "id": "x14",
-      "label": "spring click",
-      "slug": "spring-click",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "spring-click_01",
-        "spring-click_02",
-        "spring-click_03",
-        "spring-click_04",
-        "spring-click_05",
-        "spring-click_06",
-        "spring-click_07",
-        "spring-click_08",
-        "spring-click_09",
-        "spring-click_10"
-      ]
-    },
-    {
-      "id": "x15",
-      "label": "heartbeat tap",
-      "slug": "heartbeat-tap",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "heartbeat-tap_01",
-        "heartbeat-tap_02",
-        "heartbeat-tap_03",
-        "heartbeat-tap_04",
-        "heartbeat-tap_05",
-        "heartbeat-tap_06",
-        "heartbeat-tap_07",
-        "heartbeat-tap_08",
-        "heartbeat-tap_09",
-        "heartbeat-tap_10"
-      ]
-    },
-    {
-      "id": "x16",
-      "label": "glitch blip",
-      "slug": "glitch-blip",
-      "sourceType": "synthetic-generated",
-      "monkeytypeSourceFolder": null,
-      "variants": [
-        "glitch-blip_01",
-        "glitch-blip_02",
-        "glitch-blip_03",
-        "glitch-blip_04",
-        "glitch-blip_05",
-        "glitch-blip_06",
-        "glitch-blip_07",
-        "glitch-blip_08",
-        "glitch-blip_09",
-        "glitch-blip_10"
+        "subdrop-thud_01",
+        "subdrop-thud_02",
+        "subdrop-thud_03",
+        "subdrop-thud_04",
+        "subdrop-thud_05",
+        "subdrop-thud_06",
+        "subdrop-thud_07",
+        "subdrop-thud_08",
+        "subdrop-thud_09",
+        "subdrop-thud_10"
       ]
     }
   ]

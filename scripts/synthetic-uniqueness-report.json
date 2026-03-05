@@ -1,0 +1,13 @@
+{
+  "threshold": 0.36,
+  "syntheticCount": 5,
+  "duplicatePairs": [],
+  "keep": [
+    "chaos-burst",
+    "granular-shatter",
+    "reverse-suck",
+    "ringmod-zap",
+    "subdrop-thud"
+  ],
+  "remove": []
+}

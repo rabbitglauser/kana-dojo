@@ -20,6 +20,7 @@ module.exports = {
     ],
     // Pool — 2-3 randomly selected per issue (adds variety, avoids spam signal)
     secondaryIssuePool: [
+/* 
       'easy',
       'beginner',
       'beginner-friendly',
@@ -29,6 +30,7 @@ module.exports = {
       'typescript',
       'json',
       'no setup'
+ */
     ],
     // Label for filtering community issues
     community: 'community',
@@ -217,7 +219,7 @@ module.exports = {
     // Shared constants and helpers
     common: {
       titleTemplate:
-        '[Good First Issue] {emoji} Add new {issueType} - Beginner-Friendly Contribution (good-first-issue, <1 min, JSON, no setup)',
+        '[Good First Issue] {emoji} Add new {issueType} - Beginner-Friendly Contribution (good-first-issue, <1 min, no setup)',
       difficulty: 'Easy (good first issue!)',
       instructionsHeader: '### 📝 Instructions',
       footer:

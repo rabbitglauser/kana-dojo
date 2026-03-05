@@ -50,22 +50,11 @@ const monkeytypeSyntheticMap = [
 ];
 
 const extraSyntheticMap = [
-  { id: 'x1', slug: 'pulse-soft', label: 'pulse soft' },
-  { id: 'x2', slug: 'fm-glass', label: 'fm glass' },
-  { id: 'x3', slug: 'analog-thock', label: 'analog thock' },
-  { id: 'x4', slug: 'bit-crunch', label: 'bit crunch' },
-  { id: 'x5', slug: 'woodblock', label: 'woodblock' },
-  { id: 'x6', slug: 'marimba-mini', label: 'marimba mini' },
-  { id: 'x7', slug: 'kalimba-tine', label: 'kalimba tine' },
-  { id: 'x8', slug: 'bubble-pop', label: 'bubble pop' },
-  { id: 'x9', slug: 'laser-pew-micro', label: 'laser pew micro' },
-  { id: 'x10', slug: 'vinyl-tick', label: 'vinyl tick' },
-  { id: 'x11', slug: 'hollow-clack', label: 'hollow clack' },
-  { id: 'x12', slug: 'zen-bell-short', label: 'zen bell short' },
-  { id: 'x13', slug: 'typebar-metal', label: 'typebar metal' },
-  { id: 'x14', slug: 'spring-click', label: 'spring click' },
-  { id: 'x15', slug: 'heartbeat-tap', label: 'heartbeat tap' },
-  { id: 'x16', slug: 'glitch-blip', label: 'glitch blip' },
+  { id: 'x17', slug: 'chaos-burst', label: 'chaos burst' },
+  { id: 'x18', slug: 'reverse-suck', label: 'reverse suck' },
+  { id: 'x19', slug: 'ringmod-zap', label: 'ringmod zap' },
+  { id: 'x20', slug: 'granular-shatter', label: 'granular shatter' },
+  { id: 'x21', slug: 'subdrop-thud', label: 'subdrop thud' },
 ];
 
 const sampleRate = 44100;
@@ -446,6 +435,90 @@ function synthByName(name, index) {
     return normalize(highPass(addNoise(concatenate(parts), 0.015), 1400));
   }
 
+  if (name === 'chaos-burst') {
+    const durationSec = 0.065;
+    const total = Math.floor(sampleRate * durationSec);
+    const out = new Float32Array(total);
+    let x = 0.23 + v * 0.011;
+    const r = 3.84 + (v % 4) * 0.03;
+    for (let i = 0; i < total; i++) {
+      x = r * x * (1 - x);
+      const t = i / sampleRate;
+      const amp = envelope(t, durationSec, 0.001, 0.35);
+      out[i] = (x * 2 - 1) * amp * 0.6;
+    }
+    return normalize(highPass(out, 900));
+  }
+
+  if (name === 'reverse-suck') {
+    const durationSec = 0.095;
+    const total = Math.floor(sampleRate * durationSec);
+    const out = new Float32Array(total);
+    for (let i = 0; i < total; i++) {
+      const t = i / sampleRate;
+      const prog = i / (total - 1);
+      const freq = 180 + prog * (2000 + v * 25);
+      const phase = 2 * Math.PI * freq * t;
+      const reverseEnv = Math.pow(prog, 2.2);
+      out[i] = Math.sin(phase) * reverseEnv * 0.45;
+    }
+    return normalize(highPass(out, 350));
+  }
+
+  if (name === 'ringmod-zap') {
+    const carrier = renderTone({
+      freq: 420 + v * 30,
+      durationSec: 0.07,
+      wave: 'sine',
+      amp: 0.55,
+      pitchDrop: 0.2,
+    });
+    const total = carrier.length;
+    const out = new Float32Array(total);
+    const modFreq = 75 + v * 8;
+    for (let i = 0; i < total; i++) {
+      const t = i / sampleRate;
+      const mod = Math.sin(2 * Math.PI * modFreq * t);
+      out[i] = carrier[i] * mod;
+    }
+    return normalize(highPass(out, 800));
+  }
+
+  if (name === 'granular-shatter') {
+    const durationSec = 0.09;
+    const total = Math.floor(sampleRate * durationSec);
+    const out = new Float32Array(total);
+    const grains = 13 + (v % 4);
+    for (let g = 0; g < grains; g++) {
+      const start = Math.floor(((g + 1) / (grains + 2)) * total);
+      const grainLen = Math.floor(sampleRate * (0.003 + ((g + v) % 3) * 0.002));
+      const f = 700 + g * 230 + v * 15;
+      for (let i = 0; i < grainLen; i++) {
+        const idx = start + i;
+        if (idx >= total) break;
+        const localT = i / sampleRate;
+        const localEnv = 1 - i / grainLen;
+        out[idx] += Math.sin(2 * Math.PI * f * localT) * localEnv * 0.2;
+      }
+    }
+    return normalize(highPass(addNoise(out, 0.02), 1300));
+  }
+
+  if (name === 'subdrop-thud') {
+    const durationSec = 0.12;
+    const total = Math.floor(sampleRate * durationSec);
+    const out = new Float32Array(total);
+    for (let i = 0; i < total; i++) {
+      const t = i / sampleRate;
+      const prog = i / (total - 1);
+      const freq = 140 - prog * (105 + v * 1.2);
+      const phase = 2 * Math.PI * Math.max(22, freq) * t;
+      const env = Math.exp(-9.2 * prog);
+      out[i] = Math.sin(phase) * env * 0.8;
+    }
+    return normalize(lowPass(out, 280));
+  }
+
   return renderTone({ freq: 440, durationSec: 0.05, wave: 'sine', amp: 0.3 });
 }
 
@@ -536,22 +609,11 @@ function main() {
     '14',
     '15',
     '16',
-    'x1',
-    'x2',
-    'x3',
-    'x4',
-    'x5',
-    'x6',
-    'x7',
-    'x8',
-    'x9',
-    'x10',
-    'x11',
-    'x12',
-    'x13',
-    'x14',
-    'x15',
-    'x16',
+    'x17',
+    'x18',
+    'x19',
+    'x20',
+    'x21',
   ];
   const all = [...fileBacked, ...monkeytypeSynthetic, ...extraSynthetic].sort(
     (a, b) => order.indexOf(a.id) - order.indexOf(b.id),
