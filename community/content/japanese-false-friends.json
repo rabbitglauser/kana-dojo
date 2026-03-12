@@ -100,5 +100,11 @@
   "termB": "claim (English)",
   "explanation": "In Japanese it usually means complaint. (Set 4)",
   "example": "お客様からクレームが届いた。"
+},
+  {
+  "termA": "イメージ (imeeji)",
+  "termB": "image",
+  "explanation": "Often means impression/public image. (Set 3)",
+  "example": "会社のイメージが良くなった。"
 }
 ]
